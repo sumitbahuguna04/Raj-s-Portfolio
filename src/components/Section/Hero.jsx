@@ -11,14 +11,15 @@ function Hero({ lang }) {
         
         {/* Left side - User Data */}
         <div className="w-full lg:w-[40%] flex flex-col lg:m-20 lg:gap-4 text-center lg:text-left">
-          <h2 className="font-bold mb-4 text-4xl">{content.name}</h2>
-          <p className="text-[#b0b0b0] text-xl sm:text-2xl md:text-3xl mb-6">
-            <span className="text-[#8a88f1] font-semibold">{content.title}</span>
+          <h2 className="font-bold mb-4 text-3xl  sm:text-4xl">{content.name}</h2>
+          <p className="text-[#b0b0b0] text-2xl sm:text-2xl md:text-3xl mb-6">
+            <span className="text-[#f38926] font-bold">{content.title}</span>
           </p>
-          <p className="text-[#d0d0d0] text-sm sm:text-base md:text-lg mb-4">
+        
+          <p className="text-[#d2bfa2]   md:text-lg mb-4">
             {content.bio}
           </p>
-          <p className="text-[#d0d0d0] text-sm sm:text-base md:text-lg">
+          <p className="text-[#cdbfa9]  md:text-lg">
             {content.expertise}
           </p>
         </div>
