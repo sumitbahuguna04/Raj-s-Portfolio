@@ -8,12 +8,11 @@ import Events from './components/Section/Events'
 import Certification from './components/Section/Certification'
 
 function App() {
-  const [count, setCount] = useState(0)
-
+   const [lang, setLang] = useState("en");
   return (
     <>
-      <Navbar/>
-      <Hero/>
+      <Navbar lang={lang} setLang={setLang}/>
+      <Hero lang={lang}/>
       <Events/>
       <Certification/>
     </>
