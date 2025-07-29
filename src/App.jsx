@@ -13,8 +13,8 @@ function App() {
     <>
       <Navbar lang={lang} setLang={setLang}/>
       <Hero lang={lang}/>
-      <Events/>
-      <Certification/>
+      <Events lang={lang}/>
+      <Certification lang={lang}/>
     </>
   )
 }
