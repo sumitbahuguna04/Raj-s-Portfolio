@@ -19,7 +19,7 @@ function Hero({ lang }) {
           <p className="text-[#d2bfa2]   md:text-lg mb-4">
             {content.bio}
           </p>
-          <p className="text-[#cdbfa9]  md:text-lg">
+          <p className="text-[#abcbbf]  md:text-lg">
             {content.expertise}
           </p>
         </div>
