@@ -25,7 +25,7 @@ function Navbar() {
               Events
             </a>
             <a href="" className="px-4 py-1 rounded-4xl hover:bg-[#272a2d] transition-colors duration-300">
-              Services
+              Awards
             </a>
             <a href="" className="px-4 py-1 rounded-4xl hover:bg-[#272a2d] transition-colors duration-300">
               Contact
@@ -62,7 +62,7 @@ function Navbar() {
                   Events
                 </a>
                 <a href="" className="px-4 py-2 rounded-4xl hover:bg-[#272a2d] transition-colors duration-300">
-                  Services
+                  Awards
                 </a>
                 <a href="" className="px-4 py-2 rounded-4xl hover:bg-[#272a2d] transition-colors duration-300">
                   Contact
