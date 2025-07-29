@@ -6,6 +6,7 @@ import Navbar from './components/Section/Navbar'
 import Hero from './components/Section/Hero'
 import Events from './components/Section/Events'
 import Certification from './components/Section/Certification'
+import Contact from './components/Section/Contact'
 
 function App() {
    const [lang, setLang] = useState("en");
@@ -15,6 +16,7 @@ function App() {
       <Hero lang={lang}/>
       <Events lang={lang}/>
       <Certification lang={lang}/>
+      <Contact/>
     </>
   )
 }
