@@ -16,10 +16,10 @@ function Hero({ lang }) {
             <span className="text-[#f38926] font-bold">{content.title}</span>
           </p>
         
-          <p className="text-[#d2bfa2]   md:text-xl mb-4">
+          <p className="text-[#d6c2a0]   md:text-xl mb-4">
             {content.bio}
           </p>
-          <p className="text-[#abcbbf] text-sm md:text-lg">
+          <p className="text-[#ffffffcd] text-sm md:text-lg">
             {content.expertise}
           </p>
         </div>
