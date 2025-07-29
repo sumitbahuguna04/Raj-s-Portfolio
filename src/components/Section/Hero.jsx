@@ -2,7 +2,7 @@ import React from "react";
 
 function Hero() {
   return (
-    <div className="max-w-7xl mx-auto sm:px-6 lg:px-12 mt-10">
+    <div className="max-w-7xl mx-auto sm:px-6 lg:px-12 mt-10 mb-20">
       <div className="w-full bg-[#19191d] text-white rounded-3xl shadow-lg p-6 sm:p-10 flex flex-col lg:flex-row items-center lg:items-start gap-8">
         
         {/* Left side - User Data */}
