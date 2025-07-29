@@ -17,7 +17,7 @@ function Navbar() {
         
         {/* Desktop & Medium Menu + Language Select together */}
         <div className="hidden sm:flex items-center justify-between w-full">
-          <div className="flex items-center sm:gap-5 md:gap-8">
+          <div className="flex items-center sm:gap-5 md:gap-5 lg:gap-8">
             <a href="" className="px-4 py-1 rounded-4xl hover:bg-[#272a2d] transition-colors duration-300">
               Home
             </a>
@@ -33,13 +33,13 @@ function Navbar() {
           </div>
           <div>
             <Select>
-              <SelectTrigger className="w-[120px] bg-[#ebebeb] text-black border border-[#d1d0d0]">
-                <SelectValue placeholder="Language" />
+              <SelectTrigger className=" bg-[#ebebeb]  text-black border border-[#d1d0d0]">
+                <SelectValue placeholder="English" />
               </SelectTrigger>
-              <SelectContent className="bg-[#1e1e20] text-white">
-                <SelectItem value="en">English</SelectItem>
-                <SelectItem value="hi">Hindi</SelectItem>
-                <SelectItem value="fr">French</SelectItem>
+              <SelectContent className="bg-[#1e1e20] hover:bg-[#1c1c1e] text-white border-[#393737]">
+                <SelectItem value="en" className="">English</SelectItem>
+             
+                <SelectItem value="ch">Chinese</SelectItem>
               </SelectContent>
             </Select>
           </div>
@@ -53,7 +53,7 @@ function Navbar() {
                 <Menu className="w-6 h-6 text-white" />
               </Button>
             </SheetTrigger>
-            <SheetContent side="left" className="bg-[#151517] text-white">
+            <SheetContent side="left" className="bg-[#1e1e20] hover:bg-[#1c1c1e] text-white border-[#393737]">
               <div className="flex flex-col gap-6 mt-10">
                 <a href="" className="px-4 py-2 rounded-4xl hover:bg-[#272a2d] transition-colors duration-300">
                   Home
@@ -70,13 +70,12 @@ function Navbar() {
 
                 {/* Language Select (Mobile Sidebar) */}
                 <Select >
-                  <SelectTrigger className="w-[150px] bg-[#ebebeb] text-black border border-[#d1d0d0]">
-                    <SelectValue placeholder="Language" />
+                  <SelectTrigger className="w-[150px] bg-[#ebebeb] text-black border border-[#272626]">
+                    <SelectValue placeholder="English" />
                   </SelectTrigger>
-                  <SelectContent className="bg-[#1e1e20] text-white">
-                    <SelectItem value="en">English</SelectItem>
-                    <SelectItem value="hi">Hindi</SelectItem>
-                    <SelectItem value="fr">French</SelectItem>
+                  <SelectContent className="bg-[#1e1e20] hover:bg-[#1c1c1e] text-white border-[#393737]">
+                    <SelectItem value="en" className="bg-[#252527] ">English</SelectItem>
+                    <SelectItem value="ch" className="bg-[#252527] mt-1" >Chinese</SelectItem>
                   </SelectContent>
                 </Select>
               </div>
