@@ -10,30 +10,41 @@ function Contact({ lang }) {
           {content.title}
         </h1>
         <div className="w-full bg-[#b88f557d] p-[0.5px]"></div>{" "}
-        <div className="flex justify-evenly items-center mt-3 sm:mt-5 md:mt-10 p-2 sm:p-3 md:p-5 ">
-          <div className="flex flex-col  gap-2 sm:gap-4">
-            <img
-              src="weChat.jpg"
-              alt=""
-              className="size-12 hover:scale-110 transition duration-500 md:size-14 rounded-2xl "
-            />
-            <h1>We Chat</h1>
+        <div className="flex  justify-evenly items-center mt-3 sm:mt-5 md:mt-10 p-2 sm:p-3 md:p-5 ">
+          <div className="flex flex-col  gap-3 sm:gap-4">
+            <a href="" target="_blank" rel="noopener noreferrer">
+              <img
+                src="weChat.jpg"
+                alt=""
+                className="size-12 hover:scale-110 transition duration-500 md:size-14 rounded-2xl "
+              />
+            </a>
+            <h1>{content.icon1}</h1>
           </div>
-          <div className="flex flex-col gap-1 sm:gap-3">
-            <img
-              src="tiktok.webp"
-              alt=""
-              className="size-13 hover:scale-110 transition duration-500  md:size-15 rounded-2xl"
-            />
-            <h1>Tik Tok</h1>
+          <div className="flex flex-col gap-2 sm:gap-3">
+            <a href="" target="_blank" rel="noopener noreferrer">
+              <img
+                src="tiktok.webp"
+                alt="TikTok"
+                className="size-13 hover:scale-110 transition duration-500 md:size-15 rounded-2xl"
+              />
+            </a>
+
+            <h1>{content.icon2}</h1>
           </div>
-          <div className="flex flex-col gap-1 sm:gap-3">
-            <img
-              src="redNote.jpg"
-              alt=""
-              className="size-13 hover:scale-110 transition duration-500  md:size-15 rounded-2xl"
-            />
-            <h1>Red Note</h1>
+          <div className="flex flex-col gap-2 sm:gap-3">
+            <a
+              href="http://xhslink.com/m/8XlntkXFhBx "
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="redNote.jpg"
+                alt=""
+                className="size-13 hover:scale-110 transition duration-500  md:size-15 rounded-2xl"
+              />
+            </a>
+            <h1>{content.icon3}</h1>
           </div>
         </div>
       </div>
