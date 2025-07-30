@@ -16,7 +16,7 @@ function App() {
       <Hero lang={lang}/>
       <Events lang={lang}/>
       <Certification lang={lang}/>
-      <Contact/>
+      <Contact lang={lang}/>
     </>
   )
 }

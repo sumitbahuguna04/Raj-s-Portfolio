@@ -48,9 +48,9 @@ function Navbar({ lang, setLang }) {
             <SelectTrigger className="bg-[#ebebeb] text-black border border-[#d1d0d0]">
               <SelectValue placeholder="English" />
             </SelectTrigger>
-            <SelectContent className="bg-[#1e1e20] text-white border-[#393737] ">
-              <SelectItem value="en">English</SelectItem>
-              <SelectItem value="zh">Chinese</SelectItem>
+            <SelectContent className="bg-[#1e1e20] text-white border-[#393737] p-1">
+              <SelectItem value="en" className="bg-[#2d2d2f9a]">English</SelectItem>
+              <SelectItem value="zh"  className="bg-[#2d2d2f9a] mt-2">Chinese</SelectItem>
             </SelectContent>
           </Select>
         </div>
@@ -92,13 +92,13 @@ function Navbar({ lang, setLang }) {
                    {content.contact}
               </a>
               <Select value={lang} onValueChange={(value) => setLang(value)}>
-                <SelectTrigger className="w-[150px] bg-[#ebebeb] text-black flex ml-3 border border-[#272626]">
+                <SelectTrigger className="w-[150px] bg-[#afb3b5]  text-black flex ml-3 border border-[#272626]">
                   <SelectValue placeholder="English" />
                 </SelectTrigger>
-                <SelectContent className="bg-[#1e1e20] text-white border-[#464444]">
-                  <SelectItem value="en">English</SelectItem>
-                  <SelectItem value="zh">Chinese</SelectItem>
-                </SelectContent>
+                <SelectContent className="bg-[#1e1e20] text-white border-[#393737] p-1">
+              <SelectItem value="en" className="bg-[#2d2d2f9a]">English</SelectItem>
+              <SelectItem value="zh"  className="bg-[#2d2d2f9a] mt-2">Chinese</SelectItem>
+            </SelectContent>
               </Select>
             </div>
           </SheetContent>
