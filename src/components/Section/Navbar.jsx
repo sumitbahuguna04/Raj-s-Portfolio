@@ -45,7 +45,7 @@ function Navbar({ lang, setLang }) {
         </div>
         <div>
           <Select value={lang} onValueChange={(value) => setLang(value)}>
-            <SelectTrigger className="bg-[#ebebeb] text-black border border-[#d1d0d0]">
+            <SelectTrigger className="bg-[#fff] text-black border border-[#d1d0d0]">
               <SelectValue placeholder="English" />
             </SelectTrigger>
             <SelectContent className="bg-[#1e1e20] text-white border-[#393737] p-1">
@@ -92,7 +92,7 @@ function Navbar({ lang, setLang }) {
                    {content.contact}
               </a>
               <Select value={lang} onValueChange={(value) => setLang(value)}>
-                <SelectTrigger className="w-[150px] bg-[#afb3b5]  text-black flex ml-3 border border-[#272626]">
+                <SelectTrigger className="w-[150px] bg-[#fff]  text-black flex ml-3 border border-[#272626]">
                   <SelectValue placeholder="English" />
                 </SelectTrigger>
                 <SelectContent className="bg-[#1e1e20] text-white border-[#393737] p-1">
