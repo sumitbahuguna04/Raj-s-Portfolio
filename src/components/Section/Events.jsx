@@ -26,7 +26,42 @@ function Events({ lang }) {
         </div>
         <div>
           <img
-            src="award3.jpg"
+            src="event9.jpg"
+            alt="User"
+            className="rounded-2xl w-full h-auto object-cover border-2 border-[#2e2e30]"
+          />
+        </div>
+         <div>
+          <img
+            src="event6.jpg"
+            alt="User"
+            className="rounded-2xl w-full h-auto object-cover border-2 border-[#2e2e30]"
+          />
+        </div>
+         <div>
+          <img
+            src="event7.jpg"
+            alt="User"
+            className="rounded-2xl w-full h-auto object-cover border-2 border-[#2e2e30]"
+          />
+        </div>
+         <div>
+          <img
+            src="event8.jpg"
+            alt="User"
+            className="rounded-2xl w-full h-auto object-cover border-2 border-[#2e2e30]"
+          />
+        </div>
+         <div>
+          <img
+            src="event9.jpg"
+            alt="User"
+            className="rounded-2xl w-full h-auto object-cover border-2 border-[#2e2e30]"
+          />
+        </div>
+         <div>
+          <img
+            src="event10.jpg"
             alt="User"
             className="rounded-2xl w-full h-auto object-cover border-2 border-[#2e2e30]"
           />
