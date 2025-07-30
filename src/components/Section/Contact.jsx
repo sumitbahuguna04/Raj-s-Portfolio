@@ -10,7 +10,7 @@ function Contact({ lang }) {
           {content.title}
         </h1>
         <div className="w-full bg-[#b88f557d] p-[0.5px]"></div>
-        <div className="flex  justify-evenly items-center mt-3 sm:mt-5 md:mt-7 p-2 sm:p-3 md:p-5 ">
+        <div className="flex  justify-evenly items-center mt-3 sm:mt-5 md:mt-7 p-2 gap-5 sm:p-3 md:p-5 ">
           <div className="flex flex-col items-center gap-3 sm:gap-4">
             <div className="w-full flex justify-center">
               <img
@@ -21,7 +21,7 @@ function Contact({ lang }) {
             </div>
             <div className="text-center space-y-1">
               <h1>{content.icon1} :</h1>
-              <a className="underline text-[#fee1ab] hover:text-[#fee1abc1] cursor-pointer transition ">
+              <a className="underline text-xs  sm:text-[15px]   text-[#fee1ab] hover:text-[#fee1abc1] cursor-pointer transition ">
                 Rayskol365
               </a>
             </div>
@@ -37,7 +37,7 @@ function Contact({ lang }) {
             </div>
             <div className="text-center space-y-1">
               <h1>{content.icon2} :</h1>
-              <a className="underline text-[#fee1ab] hover:text-[#fee1abc1] cursor-pointer transition ">
+              <a className="underline text-xs  sm:text-[15px] text-[#fee1ab] hover:text-[#fee1abc1] cursor-pointer transition ">
                 Rayskol365
               </a>
             </div>
@@ -53,7 +53,7 @@ function Contact({ lang }) {
             </div>
             <div className="text-center space-y-1">
               <h1>{content.icon3} :</h1>
-              <a className="underline text-[#fee1ab] hover:text-[#fee1abc1] cursor-pointer transition duration-300">
+              <a className="underline text-xs  sm:text-[15px]  text-[#fee1ab] hover:text-[#fee1abc1] cursor-pointer transition duration-300">
                 Rayskol365
               </a>
             </div>
