@@ -22,7 +22,9 @@ function App() {
       <div id="awards">
         <Certification lang={lang} />
       </div>
-      <div id="contact">{/* Contact Section */}</div>
+      <div id="contact">
+        <Contact lang={lang}/>
+      </div>
     </>
   );
 }

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { Button } from "../ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "../ui/sheet";
 import { Menu } from "lucide-react";
@@ -13,14 +13,16 @@ import navbarContent from "@/data/navbarContent";
 
 function Navbar({ lang, setLang }) {
   const content = navbarContent[lang];
-  const [open, setOpen] = useState(false);
+  const [open, setOpen] = React.useState(false);
 
-  const handleScroll = (id) => {
-    const section = document.getElementById(id);
-    if (section) {
-      section.scrollIntoView({ behavior: "smooth" });
-    }
-    setOpen(false); // sidebar close kare
+  const scrollToSection = (id) => {
+    const el = document.getElementById(id);
+    if (el) el.scrollIntoView({ behavior: "smooth" });
+  };
+
+  const handleMobileClick = (id) => {
+    setOpen(false);
+    setTimeout(() => scrollToSection(id), 300); // menu close hone ke baad scroll
   };
 
   return (
@@ -28,30 +30,30 @@ function Navbar({ lang, setLang }) {
       {/* Desktop Menu */}
       <div className="hidden sm:flex items-center justify-between w-full">
         <div className="flex items-center sm:gap-5 md:gap-5 lg:gap-8">
-          <span
-            onClick={() => handleScroll("home")}
-            className="cursor-pointer px-4 py-1 rounded-4xl hover:bg-[#3f3d3a76] transition-colors duration-500"
+          <button
+            onClick={() => scrollToSection("home")}
+            className="px-4 py-1 rounded-4xl hover:bg-[#3f3d3a76] transition-colors duration-500"
           >
             {content.home}
-          </span>
-          <span
-            onClick={() => handleScroll("events")}
-            className="cursor-pointer px-4 py-1 rounded-4xl hover:bg-[#3f3d3a76]  transition-colors duration-500"
+          </button>
+          <button
+            onClick={() => scrollToSection("events")}
+            className="px-4 py-1 rounded-4xl hover:bg-[#3f3d3a76] transition-colors duration-500"
           >
             {content.events}
-          </span>
-          <span
-            onClick={() => handleScroll("awards")}
-            className="cursor-pointer px-4 py-1 rounded-4xl hover:bg-[#3f3d3a76]  transition-colors duration-500"
+          </button>
+          <button
+            onClick={() => scrollToSection("awards")}
+            className="px-4 py-1 rounded-4xl hover:bg-[#3f3d3a76] transition-colors duration-500"
           >
             {content.awards}
-          </span>
-          <span
-            onClick={() => handleScroll("contact")}
-            className="cursor-pointer px-4 py-1 rounded-4xl hover:bg-[#3f3d3a76]  transition-colors duration-500"
+          </button>
+          <button
+            onClick={() => scrollToSection("contact")}
+            className="px-4 py-1 rounded-4xl hover:bg-[#3f3d3a76] transition-colors duration-500"
           >
             {content.contact}
-          </span>
+          </button>
         </div>
         <div>
           <Select value={lang} onValueChange={(value) => setLang(value)}>
@@ -80,35 +82,35 @@ function Navbar({ lang, setLang }) {
           </SheetTrigger>
           <SheetContent
             side="left"
-            className="bg-[#1e1e20] text-white border-[#393737]"
+            className="bg-[#1e1e20] text-white border-[#393737] p-5"
           >
-            <div className="flex flex-col gap-6 mt-10">
-              <span
-                onClick={() => handleScroll("home")}
-                className="cursor-pointer px-4 py-2 rounded-4xl hover:bg-[#3f3d3a76] transition-colors duration-300"
+            <div className="flex flex-col gap-5 mt-10 text-left">
+              <button
+                onClick={() => handleMobileClick("home")}
+                className="px-2 py-2 rounded-4xl hover:bg-[#3f3d3a76] text-left"
               >
                 {content.home}
-              </span>
-              <span
-                onClick={() => handleScroll("events")}
-                className="cursor-pointer px-4 py-2 rounded-4xl hover:bg-[#3f3d3a76] transition-colors duration-300"
+              </button>
+              <button
+                onClick={() => handleMobileClick("events")}
+                className="px-2 py-2 rounded-4xl hover:bg-[#3f3d3a76] text-left"
               >
                 {content.events}
-              </span>
-              <span
-                onClick={() => handleScroll("awards")}
-                className="cursor-pointer px-4 py-2 rounded-4xl hover:bg-[#3f3d3a76] transition-colors duration-300"
+              </button>
+              <button
+                onClick={() => handleMobileClick("awards")}
+                className="px-2 py-2 rounded-4xl hover:bg-[#3f3d3a76] text-left"
               >
                 {content.awards}
-              </span>
-              <span
-                onClick={() => handleScroll("contact")}
-                className="cursor-pointer px-4 py-2 rounded-4xl hover:bg-[#3f3d3a76] transition-colors duration-300"
+              </button>
+              <button
+                onClick={() => handleMobileClick("contact")}
+                className="px-2 py-2 rounded-4xl hover:bg-[#3f3d3a76] text-left"
               >
                 {content.contact}
-              </span>
+              </button>
               <Select value={lang} onValueChange={(value) => setLang(value)}>
-                <SelectTrigger className="w-[150px] bg-[#fff] text-black flex ml-3 border border-[#272626]">
+                <SelectTrigger className="w-[150px] bg-[#fff] text-black border border-[#272626] mt-5">
                   <SelectValue placeholder="English" />
                 </SelectTrigger>
                 <SelectContent className="bg-[#1e1e20] text-white border-[#393737] p-1">
