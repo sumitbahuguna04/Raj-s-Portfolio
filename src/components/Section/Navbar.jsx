@@ -84,28 +84,28 @@ function Navbar({ lang, setLang }) {
             side="left"
             className="bg-[#1e1e20] text-white border-[#393737] p-5"
           >
-            <div className="flex flex-col gap-5 mt-10 items-center text-left">
+            <div className="flex flex-col  gap-5 mt-10 mr-30 ">
               <button
                 onClick={() => handleMobileClick("home")}
-                className="px-10 py-2 bg-[#5b564f76]  rounded-xl hover:bg-[#5b564f76] text-orange-300 text-left"
+                className=" py-2 bg-[#5b564f76]  rounded-xl hover:bg-[#5b564f76] text-orange-300 "
               >
                 {content.home}
               </button>
               <button
                 onClick={() => handleMobileClick("events")}
-                className="px-10 py-2 bg-[#5b564f76] rounded-xl hover:bg-[#5b564f76] text-orange-300 text-left"
+                className="  py-2 bg-[#5b564f76] rounded-xl hover:bg-[#5b564f76] text-orange-300 "
               >
                 {content.events}
               </button>
               <button
                 onClick={() => handleMobileClick("awards")}
-                className="px-10 py-2 bg-[#5b564f76] rounded-xl hover:bg-[#5b564f76] text-orange-300 text-left"
+                className=" py-2 bg-[#5b564f76] rounded-xl hover:bg-[#5b564f76] text-orange-300 "
               >
                 {content.awards}
               </button>
               <button
                 onClick={() => handleMobileClick("contact")}
-                className="px-10 py-2 bg-[#5b564f76] rounded-xl hover:bg-[#5b564f76] text-orange-300 text-left"
+                className=" py-2 bg-[#5b564f76] rounded-xl hover:bg-[#5b564f76] text-orange-300 "
               >
                 {content.contact}
               </button>
