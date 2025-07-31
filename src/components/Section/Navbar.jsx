@@ -32,25 +32,25 @@ function Navbar({ lang, setLang }) {
         <div className="flex items-center sm:gap-5 md:gap-5 lg:gap-8">
           <button
             onClick={() => scrollToSection("home")}
-            className="px-4 py-1 rounded-4xl hover:bg-[#3f3d3a76] transition-colors duration-500"
+            className="px-4 py-1 rounded-4xl hover:bg-[#5b564f76]  transition-colors duration-500 hover:text-orange-300 "
           >
             {content.home}
           </button>
           <button
             onClick={() => scrollToSection("events")}
-            className="px-4 py-1 rounded-4xl hover:bg-[#3f3d3a76] transition-colors duration-500"
+            className="px-4 py-1 rounded-4xl hover:bg-[#5b564f76] transition-colors duration-500 hover:text-orange-300"
           >
             {content.events}
           </button>
           <button
             onClick={() => scrollToSection("awards")}
-            className="px-4 py-1 rounded-4xl hover:bg-[#3f3d3a76] transition-colors duration-500"
+            className="px-4 py-1 rounded-4xl hover:bg-[#5b564f76] transition-colors duration-500 hover:text-orange-300"
           >
             {content.awards}
           </button>
           <button
             onClick={() => scrollToSection("contact")}
-            className="px-4 py-1 rounded-4xl hover:bg-[#3f3d3a76] transition-colors duration-500"
+            className="px-4 py-1 rounded-4xl hover:bg-[#5b564f76] transition-colors duration-500 hover:text-orange-300"
           >
             {content.contact}
           </button>
@@ -84,33 +84,33 @@ function Navbar({ lang, setLang }) {
             side="left"
             className="bg-[#1e1e20] text-white border-[#393737] p-5"
           >
-            <div className="flex flex-col gap-5 mt-10 text-left">
+            <div className="flex flex-col gap-5 mt-10 items-center text-left">
               <button
                 onClick={() => handleMobileClick("home")}
-                className="px-2 py-2 rounded-4xl hover:bg-[#3f3d3a76] text-left"
+                className="px-10 py-2 bg-[#5b564f76]  rounded-xl hover:bg-[#5b564f76] text-orange-300 text-left"
               >
                 {content.home}
               </button>
               <button
                 onClick={() => handleMobileClick("events")}
-                className="px-2 py-2 rounded-4xl hover:bg-[#3f3d3a76] text-left"
+                className="px-10 py-2 bg-[#5b564f76] rounded-xl hover:bg-[#5b564f76] text-orange-300 text-left"
               >
                 {content.events}
               </button>
               <button
                 onClick={() => handleMobileClick("awards")}
-                className="px-2 py-2 rounded-4xl hover:bg-[#3f3d3a76] text-left"
+                className="px-10 py-2 bg-[#5b564f76] rounded-xl hover:bg-[#5b564f76] text-orange-300 text-left"
               >
                 {content.awards}
               </button>
               <button
                 onClick={() => handleMobileClick("contact")}
-                className="px-2 py-2 rounded-4xl hover:bg-[#3f3d3a76] text-left"
+                className="px-10 py-2 bg-[#5b564f76] rounded-xl hover:bg-[#5b564f76] text-orange-300 text-left"
               >
                 {content.contact}
               </button>
               <Select value={lang} onValueChange={(value) => setLang(value)}>
-                <SelectTrigger className="w-[150px] bg-[#fff] text-black border border-[#272626] mt-5">
+                <SelectTrigger className="w-[150px] bg-[#fff] text-black border border-[#272626]  mt-5">
                   <SelectValue placeholder="English" />
                 </SelectTrigger>
                 <SelectContent className="bg-[#1e1e20] text-white border-[#393737] p-1">
