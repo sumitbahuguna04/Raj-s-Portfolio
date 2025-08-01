@@ -9,7 +9,7 @@ function Travel() {
             Plan Your Next Adventure
           </h1>
           <div className="w-full bg-[#b88f557d] p-[0.5px]"></div>
-          <h1 className="text-orange-200 mt-3 sm:mt-5 md:mt-7 bg-[#2c2c349e] p-5 text-[13px] sm:text-[13px] md:text-[18px] rounded-2xl tracking-wider">
+          <h1 className="text-orange-200 mt-3 sm:mt-5 md:mt-7 bg-[#2c2c349e] p-5 text-[14px] sm:text-[15px] md:text-[18px] rounded-2xl tracking-wider">
             I organize customized trips to some of the most beautiful Himalayan
             destinations. Whether you’re looking for spiritual peace at Tungnath
             or an adventurous trek to Rudranath, I make sure your journey is
@@ -30,7 +30,7 @@ function Travel() {
                 src="CHOPTA.jpg"
                 className="rounded-2xl w-full h-auto object-cover border-2 border-[#2e2e30]"
               />
-              <p className="text-[16px] sm:text-[18px] md:text-[20px]">
+              <p className="text-[16px] sm:text-[18px] md:text-[23px] font-semibold">
                 Chopta
               </p>
             </div>
